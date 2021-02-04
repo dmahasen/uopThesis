@@ -18,7 +18,7 @@
 \RequirePackage{titlesec}
 \RequirePackage{titletoc}
  \RequirePackage{tocloft}
-  
+ \RequirePackage[nottoc,notlof,notlot]{tocbibind}
  
 \geometry{
 	a4paper,
@@ -131,11 +131,14 @@
 \renewcommand{\contentsname}{\hspace*{\fill}\bfseries\Large TABLE OF CONTENTS \hspace*{\fill}}   
 \renewcommand{\listtablename}{\hspace*{\fill}\bfseries\Large LIST OF TABLES \hspace*{\fill}}   
 \renewcommand{\listfigurename}{\hspace*{\fill}\bfseries\Large LIST OF FIGURES \hspace*{\fill}}   
-%\renewcommand{\listabrname}{\hspace*{\fill}\bfseries\Large LIST OF ABREVIATIONS \hspace*{\fill}}   
+%\renewcommand{\listabrname}{\hspace*{\fill}\bfseries\Large LIST OF ABREVIATIONS \hspace*{\fill}} 
+
+\renewcommand{\bibname}{REFERENCES}
+  
 %%% --- Change chapter title ---
 
 \titleformat{\chapter}[display]
-{\Large \bfseries \centering}{CHAPTER\ \thechapter}{15pt}{\MakeUppercase}{\large}
+{\Large \bfseries \centering}{CHAPTER\ \thechapter}{0pt}{\MakeUppercase}{\large}
 \titlespacing*{\chapter}{-10pt}{-20pt}{45pt}
 
 
@@ -144,7 +147,7 @@
 % Change table of content
 
 \titlecontents{chapter}
-[0pt]% <left>
+[-5pt]% <left>
 {\bfseries}% <above-code>
 { \MakeUppercase{\chaptername}\ \thecontentslabel \ : \ \MakeUppercase }% <numbered-entry-format>
 {}% <numberless-entry-format>
