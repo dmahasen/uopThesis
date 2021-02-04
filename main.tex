@@ -1,0 +1,84 @@
+\documentclass{uopThesis}
+
+
+
+% \usepackage{biblatex} %[style=authoryear]
+%\usepackage[authoryear,comma]{natbib}
+
+
+
+ 
+
+\title{Thesis title is}
+
+%% The full name of the author
+\author{ Student Name }
+
+\supervisor {Supervisor name }
+
+\dept{Department of Statistics and Computer Science}
+
+\university{University of Peradeniya}
+
+\degree{B.Sc. Honours in Statistics}
+
+
+\begin{document}
+	
+ \frontmatter
+
+\maketitle % error in \computeTitlePageSpacing
+
+%\setlength{\cftbeforesecskip}{10pt}
+ 
+ \include{abstract.tex}
+ \addcontentsline{toc}{chapter}{ABSTRACT}
+ 
+ \include{declaration.tex}
+ \addcontentsline{toc}{chapter}{Declaration}
+ 
+ \include{acknowledgements.tex}
+ \addcontentsline{toc}{chapter}{Acknowledgments} 
+ 
+ \addcontentsline{toc}{chapter}{TABLE OF CONTENTS} 
+ 
+ 
+
+
+ 
+\tableofcontents
+
+\cleardoublepage
+
+\listoftables
+
+\cleardoublepage
+
+ \listoffigures
+ 
+ \cleardoublepage
+ 
+ \listoffigures
+ 
+
+\mainmatter
+
+
+
+\doublespacing
+
+\include{chapters/Introduction.tex}
+
+
+% add chapters here
+
+%\include{chapters/LiteratureReview.tex}
+
+%\bibliographystyle{apalike}
+%\bibliographystyle{unsrt} % Use for unsorted references  
+%\bibliographystyle{plainnat} % use this to have URLs listed in References
+\cleardoublepage
+\bibliographystyle{apa}%apalike}%agsm} 
+\bibliography{References}   % Path to your References.bib file	
+	
+\end{document}
